@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My page</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            header  { 
+      padding: 20px;
+      width: 99%;
+      display: block;
+      height: 500px;
+      background-color: black;
+      background-image: url("images/giphy.gif");
+      background-size: 120%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center ;
+      text-align: center;
+    }
+    .contact-title{
+        text-align: center;
+        margin-top: 50px;
+        color:black;
+        text-transform: uppercase;
+        transition: all 4s ease-in-out;
+
+    }
+    .contact-title h1{
+        font-size: 32px;
+        line-height: 10px;
+
+    }
+    .contact-title h2{
+        font-size: 16px;
+    }
+    form{
+        margin-top: 50px;
+        transition:  all 4s ease-in-out;
+    }
+    .form-control{
+        width: 600px;
+        background:transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px soild black;
+        color: black;
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+    input{
+        height: 45px;
+    }
+  
+    form .submit{
+        background: gray;
+        border-color: transparent;
+        color: black;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    form.submit{
+    position: relative;
+    top: 10px;
+    }
+    form .submit:hover {
+        background-color: lightgreen;
+        cursor:pointer;
+    }
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="logo"><a href="index.html">dnjfnvjvjvf</a></li>
+                    <li><a href="contact.html">Contact</a></li>  
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="contact-title">
+                <h1>Thanks for viewing  my page!!</h1>
+                <h2>You can contact me below</h2>
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="mailto:wallacej@students.stmaryshs.com" enctype="text/plain">
+                        <div class="meg"></div>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Name" required>
+                     <br>
+                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email" required>
+                     <br>
+                    
+                     <textarea name="message" id="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                     
+                     <input type="submit" class="form-control submit" value="Send" onclick="submit()" >
+
+
+                </div>
+          </div>
+            
+        </section>
+        <footer> By: Joe Wallace</footer>
+        <script src="main.js"></script>
+    </body>
+</html>

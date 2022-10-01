@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+
+
+.body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+/* header */
+ header  { 
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  display: block;
+  height: 400px;
+  background-color: black;
+  background-image: url("images/Drking.jpg");
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  text-align: center;
+}
+#main-toph1{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+}
+.nav ul{
+    list-style: none;
+    background: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li{
+    display:inline-block;
+    
+}
+.nav  a{
+    text-decoration: none;
+    color: white ;
+    width: 100px;
+    display:block;
+    padding:15px;
+    font-size: 20px;
+    font-family: Helvetica;
+    transition: 0.4s;
+    text-align: center; 
+   
+}
+.nav li.active a{
+border: 1px soild white;
+
+}
+.nav li a:hover{
+    border:1px solid white;
+    
+    transition: all 0.5s ease-in;
+}
+/* media Queries Home page */
+@media  (max-width: 768px) {
+    header .mobile{
+        float: none;
+      
+    }
+header .desktop {
+    display: none;
+  }
+
+
+}
+
+ header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px;
+}
+header .mobile{
+    display: none;
+}
+header .logo a {
+ background-image: url("images/dear.png");  
+ background-size: 100px;
+    display: inline-block;
+   width: 100px;
+   height: 80px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  text-indent: -9999999px;
+  top: -20px;
+}
+.main{
+    text-align: center;
+}
+.features {
+    background: white;
+    padding:20px
+    color gray;
+    display:flex;
+    flex-direction: row;
+}
+.features figure{
+    text-align: center;
+}
+.features figure img{
+   border-radius: 10px;
+ box-shadow: black 0 0 10px;
+ border: 1px solid white;
+}
+
+/* footer */
+footer{
+    background: black;
+    padding: 20px 20px;
+    font-size: 18px;
+    color: gray;
+  text-align: center;
+}
+
+/* Responsive */
+ 
